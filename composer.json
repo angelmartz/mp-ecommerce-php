@@ -1,5 +1,13 @@
 {
-    "name": "mp-ecommerce-php",
+    "name": "angelmartz/mp-ecommerce-php",
+    "description": "Certificaci\u0000n Integraci\u0000n Mercadopago 2020",
     "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Angel Martz",
+            "email": "angel.martz24@gmail.com"
+        }
+    ],
     "require": {}
 }
