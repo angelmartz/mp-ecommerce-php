@@ -9,5 +9,7 @@
             "email": "angel.martz24@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "mercadopago/dx-php": "2.0.0"
+    }
 }
