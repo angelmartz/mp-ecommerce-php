@@ -52,6 +52,12 @@ $preference->payment_methods = [
     "installments" => 6
 ];
 
+$preference->back_urls = [
+    "success" => $config['site_url'].'thankyou.php?status=success',
+    "failure" => $config['site_url'].'thankyou.php?status=failure',
+    "pending" => $config['site_url'].'thankyou.php?status=pending'
+];
+
 $preference->save();
 
 
