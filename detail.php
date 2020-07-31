@@ -209,7 +209,7 @@ $preference->save();
 <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 <pre>
 <?php
-echo $preference;
+print_r($preference, true);
 ?>
 </pre>
 </body></html>
