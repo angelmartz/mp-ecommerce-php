@@ -1,5 +1,6 @@
 <?php 
 require_once 'bootstrap.php';
+$status = $_GET['status'] ?? 'info';
 ?>
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -119,6 +120,9 @@ require_once 'bootstrap.php';
                                 <div class="as-producttile-info" style="float:left;min-height: 168px;">
                                     <div class="as-producttile-titlepricewraper" style="min-height: 128px;">
                                         <div class="as-producttile-title">
+                                        <?php
+                                            echo $status;
+                                        ?>
                                             <h3 class="as-producttile-name">
                                                 <p class="as-producttile-tilelink">
                                                     <span data-ase-truncate="2"></span>
