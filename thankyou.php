@@ -148,11 +148,12 @@ $status = $_GET['status'] ?? 'info';
                                                 Tu pago se realizó correctamente.
                                             </h3>
                                             <p>Los detalles de tu pago son los siguientes</p>
-                                            <p>Forma de pago: <b><?php echo $_GET['payment_method_id'] ?? 'sin info'; ?></b> </p> 
+                                            <p>Forma de pago: <b><?php echo $_GET['payment_type'] ?? 'sin info'; ?></b> </p> 
                                             <p>Referencia: <b><?php echo $_GET['external_reference'] ?? 'sin info'; ?></b> </p>
                                             <p>Pago ID: <b><?php echo $_GET['payment_id'] ?? 'sin info'; ?></b> </p>
                                             <p>Collection ID: <b><?php echo $_GET['collection_id'] ?? 'sin info'; ?></b> </p>
-                                            
+                                            <p>Preference ID: <b><?php echo $_GET['preference_id'] ?? 'sin info'; ?></b> </p>
+
                                         <?php
                                             endif;
                                         ?>
