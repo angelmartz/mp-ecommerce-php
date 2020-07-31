@@ -36,7 +36,7 @@ $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 
 $preference->items = [$item];
-$preference->notification_url = $config['site_url'].'ipn.php';
+$preference->notification_url = $config['site_url'].'ipn.php?source_news=webhooks';
 $preference->external_reference = $config['external_reference'];
 $preference->auto_return = 'approved';
 
