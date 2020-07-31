@@ -80,7 +80,7 @@ require_once 'bootstrap.php';
 
                                     <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                         <h2 class=" as-filter-button-text">
-                                            Smartphones
+                                            Estado de tu pago
                                         </h2>
                                     </button>
 
@@ -103,7 +103,7 @@ require_once 'bootstrap.php';
                                             <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="6|Powerbeats3 Wireless Earphones - Neighborhood Collection - Brick Red|MPXP2">
                                                 <div class="as-tilegallery-element as-image-selected">
                                                     <div class=""></div>
-                                                    <img src="./assets/003.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="">
+                                                    <img src="http://m.es.sockssupplierxieda.com/Content/upload/2019406866/201901231553321086350.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="">
                                                 </div>
                                                 
                                             </div>
