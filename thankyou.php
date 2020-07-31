@@ -121,15 +121,41 @@ $status = $_GET['status'] ?? 'info';
                                     <div class="as-producttile-titlepricewraper" style="min-height: 128px;">
                                         <div class="as-producttile-title">
                                         <?php
-                                            echo $status;
+                                            if($status == 'failure') :
                                         ?>
                                             <h3 class="as-producttile-name">
-                                                <p class="as-producttile-tilelink">
-                                                    <span data-ase-truncate="2"></span>
-                                                </p>
-
+                                                Tu pago ha sido rechazado, por favor vuelve a intentarlo con otro método de pago.
                                             </h3>
+                                        <?php
+                                            endif;
+                                        ?>
+
+                                        <?php
+                                            if($status == 'pending') :
+                                        ?>
+                                            <h3 class="as-producttile-name">
+                                                Tu pago se encuentra en proceso, tardará en reflejarse en nuestro sistema.
+                                            </h3>
+                                        <?php
+                                            endif;
+                                        ?>
                                         </div>
+
+                                        <?php
+                                            if($status == 'success') :
+                                        ?>
+                                            <h3 class="as-producttile-name">
+                                                Tu pago se realizó correctamente.
+                                            </h3>
+                                            <p>Los detalles de tu pago son los siguientes</p>
+                                            <p>Forma de pago: <b><?php echo $_GET['payment_method_id'] ?? 'sin info'; ?></b> </p> 
+                                            <p>Referencia: <b><?php echo $_GET['external_reference'] ?? 'sin info'; ?></b> </p>
+                                            <p>Pago ID: <b><?php echo $_GET['payment_id'] ?? 'sin info'; ?></b> </p>
+                                            <p>Collection ID: <b><?php echo $_GET['collection_id'] ?? 'sin info'; ?></b> </p>
+                                            
+                                        <?php
+                                            endif;
+                                        ?>
                                         
                                     </div>
                                    
