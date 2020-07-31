@@ -7,4 +7,8 @@ fwrite($payment, "================" . PHP_EOL);
 fwrite($payment, $json);
 fwrite($payment, "================ POST" . PHP_EOL);
 fwrite($payment, $_POST);
+fwrite($payment, "================ GET" . PHP_EOL);
+fwrite($payment, $_POST);
+fwrite($payment, "================ REQUEST" . PHP_EOL);
+fwrite($payment, $_POST);
 fclose($payment);
