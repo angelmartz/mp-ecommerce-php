@@ -145,7 +145,7 @@ require_once 'bootstrap.php';
         <div class="as-footnotes">
             <div class="as-footnotes-content">
                 <div class="as-footnotes-sosumi">
-                    Todos los derechos reservados Tienda Tecno 2020 - <?php $test = getenv('TEST'); echo $test; ?>
+                    Todos los derechos reservados Tienda Tecno 2020 - <?php $test = getenv('TEST'); echo $test; echo $config['INTEGRATOR-ID'] ?>
                 </div>
             </div>
         </div>
