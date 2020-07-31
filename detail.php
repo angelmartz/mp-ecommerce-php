@@ -24,6 +24,36 @@ $payer->address = [
 
 $preference->payer = $payer;
 
+$item = new MercadoPago\Item();
+
+$item->id = '1234';
+
+$item->title = $_POST['title'];
+$item->description = 'Dispositivo móvil de Tienda e-commerce';
+$item->picture_url = $config['site_url'].$_POST['img'];
+
+$item->quantity = $_POST['unit'];
+$item->unit_price = $_POST['price'];
+
+$preference->items = [$item];
+$preference->notification_url = $config['site_url'].'ipn.php';
+$preference->external_reference = $config['external_reference'];
+$preference->auto_return = 'approved';
+
+$preference->payment_methods = [
+    'excluded_payment_methods' => [[
+        'id' => 'amex'
+    ]],
+
+    'excluded_payment_types' => [[
+        'id' => 'atm'
+    ]],
+
+    "installments" => 6
+];
+
+$preference->save();
+
 
 ?>
 <!DOCTYPE html>
