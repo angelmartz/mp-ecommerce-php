@@ -3,6 +3,26 @@ require_once 'bootstrap.php';
 MercadoPago\SDK::setAccessToken($config['access-token']);
 MercadoPago\SDK::setIntegratorId($config['integrator-id']);
 
+$preference = new MercadoPago\Preference();
+
+$payer = new MercadoPago\Payer();
+
+$payer->name = 'Lalo';
+$payer->surname = 'Landa';
+$payer->email = 'test_user_58295862@testuser.com';
+
+$payer->phone =[
+  'area_code' => '52',
+  'number' => '5549737300'
+];
+
+$payer->address = [
+  'street_name' => 'Insurgentes Sur',
+  'street_number' => '1602',
+  'zip_code' => '03940'
+];
+
+$preference->payer = $payer;
 
 
 ?>
